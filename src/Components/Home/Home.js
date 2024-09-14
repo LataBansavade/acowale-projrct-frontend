@@ -13,7 +13,7 @@ function Home() {
   // Function to fetch default data from backend
   async function getdata() {
     try {
-      const response = await axios.get('http://localhost:7000/api/news/try');
+      const response = await axios.get('https://acowale-project-i1oj.onrender.com/api/news/try');
       setNewsData(response.data.articles); // Assuming `articles` is the key in the response
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -24,7 +24,7 @@ function Home() {
   async function getSearchData() {
     try {
       console.log('Fetching with:', { searchQuery, region, category }); // Debug log
-      const response = await axios.get('http://localhost:7000/api/news/search', {
+      const response = await axios.get('https://acowale-project-i1oj.onrender.com/api/news/search', {
         params: {
           query: searchQuery,
           region: region,
