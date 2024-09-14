@@ -1,6 +1,6 @@
 News App Frontend
 Important:
-The backend of this project is located here. Please make sure to clone and set up the backend before running the frontend.
+The backend of this project is located  https://github.com/LataBansavade/acowlae-project-backend  . Please make sure to clone and set up the backend before running the frontend.
 
 Table of Contents
 Project Overview
@@ -29,4 +29,4 @@ Backend
 Node.js: Backend runtime environment.
 Express.js: Web framework used to create API endpoints.
 GNews API: For fetching news articles.
-You can find the backend of the project here.
+You can find the backend of the project https://github.com/LataBansavade/acowlae-project-backend  
