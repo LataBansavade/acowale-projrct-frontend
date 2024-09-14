@@ -1,0 +1,75 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff; /* Ensure background color to prevent transparency issues */
+  }
+  
+  .logo {
+    border-radius: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 80px;
+    text-shadow: 3px 2.5px 0px rgb(138, 60, 138);
+    font-style: italic;
+    color: #FF7F50;
+  }
+  
+  .navText {
+    color: purple;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 1200px) {
+    .logo h1 {
+      font-size: 60px;
+    }
+  
+    .navText h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo h1 {
+      font-size: 50px;
+    }
+  
+    .navText h1 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .logo h1 {
+      font-size: 40px;
+    }
+  
+    .navText h1 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .logo h1 {
+      font-size: 30px;
+    }
+  
+    .navText h1 {
+      font-size: 16px;
+    }
+  }
+  

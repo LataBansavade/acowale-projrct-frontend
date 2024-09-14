@@ -1,0 +1,184 @@
+/* Home.css */
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Div for category list */
+.mainDIv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: purple;
+  overflow: hidden;
+}
+
+.mainDIv ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: wheat;
+  animation: scrollX 30s linear infinite;
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Main content area */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.searchSec {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 70%;
+  padding: 10px;
+  color: purple;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.searchBtn {
+  width: 20%;
+  padding: 10px;
+  color: purple;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Card Section */
+.CardSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .mainDIv ul {
+    font-size: 1.2rem;
+    gap: 30px;
+  }
+
+  .searchSec {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+  }
+
+  .searchBtn {
+    font-size: 14px;
+  }
+
+  .CardSec {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainDIv ul {
+    font-size: 1rem;
+    gap: 20px;
+  }
+
+  .searchSec {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  .searchInput {
+    font-size: 13px;
+  }
+
+  .searchBtn {
+    font-size: 13px;
+  }
+
+  .CardSec {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainDIv ul {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9rem;
+    animation: none; /* Disable scrolling animation on small screens */
+  }
+
+  .searchSec {
+    width: 100%;
+    max-width: none;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .searchInput {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .searchBtn {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .CardSec {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainDIv ul {
+    font-size: 0.8rem;
+  }
+
+  .searchInput {
+    font-size: 11px;
+  }
+
+  .searchBtn {
+    font-size: 11px;
+  }
+}

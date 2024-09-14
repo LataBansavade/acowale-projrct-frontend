@@ -1,0 +1,127 @@
+/* Card.css */
+
+.card {
+  width: 100%; /* Ensure card takes full width on small screens */
+  max-width: 300px; /* Maintain maximum width for larger screens */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin: 10px; /* Margin for spacing between cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto; /* Ensure the image scales proportionally */
+}
+
+.card-content {
+  padding: 16px;
+  position: relative;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  transition: max-height 0.4s ease, padding-bottom 0.4s ease;
+}
+
+.card-content .collapsed {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.card-content .expanded {
+  max-height: 200px; /* Adjust as needed for the expanded state */
+  padding-bottom: 16px; /* Space for the button */
+}
+
+.card-content button {
+  display: block;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-content button:hover {
+  background-color: #5547dc;
+}
+
+.card-footer {
+  padding: 16px;
+  background-color: #f9f9f9;
+  text-align: right;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .card-footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .card-content p {
+    font-size: 0.85rem;
+  }
+
+  .card-footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-content h3 {
+    font-size: 0.8rem;
+  }
+
+  .card-content p {
+    font-size: 0.75rem;
+  }
+
+  .card-footer {
+    font-size: 0.7rem;
+  }
+}
